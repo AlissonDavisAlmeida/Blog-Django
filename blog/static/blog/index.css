@@ -1,0 +1,137 @@
+#welcome {
+    background: linear-gradient(to right top, #6305dd, #390281);
+    padding: 6rem 12%;
+  }
+  a{
+      text-decoration: none;
+  }
+  #welcome header {
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem auto;
+  }
+  
+  #welcome img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+
+    object-position: top;
+    border: 1px solid rgba(29, 29, 29, 0.534);
+    border-radius: 12px;
+    background-color: #d8d5d241;
+    transform: rotateZ(-5deg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    animation: moveImg 1s ease-in-out 
+  }
+  
+  #welcome h2 {
+    font-size: 3.5rem;
+    margin: 0 0 0 2rem;
+    color: #e4e4e4;
+    width: 10rem;
+    animation: moveH;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+  }
+  
+ 
+  #welcome p {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  #latest-posts {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    color: blue;
+    width: 60rem;
+    padding: 20px;
+    margin: -6rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+  }
+  .post a{
+      color:  #6305dd
+  }
+  #latest-posts h2 {
+    text-align: center;
+  }
+  .post{
+      text-align: center;
+      
+      transition: ease-in-out .5s;
+  }
+  .post:hover{
+      background-color: #390281a4;
+      padding: 20px;
+      border-radius: 12px;
+    transform: scale(1.2);
+  }
+  .post a:hover{
+    color: white;
+    
+  }
+  #latest-posts ul {
+   list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   justify-content: center;
+    height: 100%;
+    gap: 1rem;
+    padding: 20px;
+  }
+  
+  #latest-posts li {
+    flex: 1;
+
+  }
+  
+  #about {
+    text-align: center;
+    padding: 3rem;
+    background-color: #e48900;
+    margin-top: 5rem;
+  }
+  
+  #about h2 {
+    font-size: 3rem;
+  }
+  
+  #about p {
+    font-size: 1.5rem;
+    color: #353535;
+  }
+ .img-mont{
+   height: 200px;
+   border-radius: 40px;
+ }
+
+ @keyframes moveH {
+    
+  from{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+ 
+  
+}
+@keyframes moveImg {
+  
+  from{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px) rotateZ(-5deg);
+  }
+ 
+  
+}

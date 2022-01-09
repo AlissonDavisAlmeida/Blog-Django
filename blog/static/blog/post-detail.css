@@ -1,0 +1,66 @@
+.main{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    flex-direction: column;
+  /*   background: linear-gradient(to right top, rgb(113, 170, 223), rgb(87, 27, 197)); */
+}
+.main img{
+    width: 200px;
+    border-radius: 50px;
+    transform: rotateZ(5deg);
+    margin-bottom: 10px;
+}
+
+.secao{
+    display: flex;
+    align-items: top;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    width: 80%;
+    font-size: 1.5rem;
+    justify-content:space-between;
+    margin: 40px 40px;
+    padding: 30px;
+    border-radius: 30px;
+    background: linear-gradient(to right top, rgb(113, 170, 223), rgb(87, 27, 197));
+}
+.corpo{
+    display: flex;
+    align-items: top;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    width: 80%;
+    flex-direction: column;
+    justify-content:space-between;
+
+    padding: 30px;
+    border-radius: 30px;
+    background: linear-gradient(to right top, rgb(113, 170, 223), rgb(87, 27, 197));
+}
+
+
+.navegacao{
+    
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 10;
+    left: 0;
+    width: 100%;
+    background: rgb(40, 72, 214);
+   
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: white;
+}
+.navegacao a:hover{
+    color: rgb(53, 50, 50);
+}

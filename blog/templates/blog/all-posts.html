@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/all-posts.css' %}">
+{% endblock  %}
+
+{% block titulo %}
+    Todos os Posts
+{% endblock  %}
+
+{% block conteudo %}
+    
+    <div class="principal">
+        <header class="navegacao">
+            <nav>
+                <a href="{% url 'pagina-inicial' %}">Página Inicial</a>
+                
+            </nav>
+            <nav class="menu-posts">
+                <a href="#">Meus Posts</a>
+                
+            </nav>
+        </header>
+        <div class="conteudo">
+            <ul>
+                {% for post in posts %}
+                
+                
+                {% include "blog/includes/post.html" %}
+                
+                {% endfor %}
+               
+          
+            </ul>
+
+        </div>
+    </div>
+{% endblock  %}
