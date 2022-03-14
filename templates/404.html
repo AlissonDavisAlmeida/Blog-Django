@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static '404.css' %}">
+{% endblock  %}
+
+{% block titulo %}
+    Página não encontrada
+{% endblock  %}
+
+{% block conteudo %}
+    <div class="conteudo-erro">
+        <h2>Por favor, utilize um Url correto, esse url não existe no servidor</h2>
+    </div>
+{% endblock  %}
