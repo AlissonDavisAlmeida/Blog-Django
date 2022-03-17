@@ -24,7 +24,7 @@
         <section class="secao">
             <h2>{{post.title}}</h2>
             <article>
-                <img src="{% static 'blog/img/'|add:post.image %}" alt="Post Title">
+                <img src="{% static 'blog/img/'|add:post.image_name %}" alt="Post Title">
                 <address>By {{post.author}}</address>
                 <div>
                     Ultima atualização em <time>{{post.date|date:"d M y"}}</time>
