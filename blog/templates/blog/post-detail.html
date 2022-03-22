@@ -20,12 +20,18 @@
                 <a href="{% url 'posts-page' %}">Meus Posts</a>
                 
             </nav>
-        </header>>
+        </header>
         <section class="secao">
             <h2>{{post.title}}</h2>
+            <div class="main_tags">
+                {% for tag in post_tags %}
+                    <span class="tags">{{ tag }}</span>
+                
+                {% endfor %}
+            </div>
             <article>
                 <img src="{% static 'blog/img/'|add:post.image_name %}" alt="Post Title">
-                <address>By {{post.author}}</address>
+                <address>By <a class="linkAuthor" href="mailto:{{post.author.email_address}}">{{post.author}}</a></address>
                 <div>
                     Ultima atualização em <time>{{post.date|date:"d M y"}}</time>
                 </div>
